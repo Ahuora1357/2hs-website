@@ -1,0 +1,145 @@
+/* ============================================================
+   2HS — Design tokens
+   Centralized color, spacing, radius, shadow and type scales.
+   Palette derived from the 2HS brand reference:
+   sky blue + cyan, royal indigo, warm gold, white surfaces.
+   ============================================================ */
+
+:root {
+  /* ---------- Brand: sky blue ---------- */
+  --blue-50: #eaf4fe;
+  --blue-100: #d5eafd;
+  --blue-200: #acd4fa;
+  --blue-300: #7bbbf6;
+  --blue-400: #4fa4f2;
+  --blue-500: #339af0;
+  --blue-600: #1c7ed6;
+  --blue-700: #1565af;
+  --blue-800: #0f4c86;
+  --blue-900: #0b3a66;
+
+  /* ---------- Brand: cyan ---------- */
+  --cyan-300: #66d9e8;
+  --cyan-400: #22b8cf;
+  --cyan-500: #15aabf;
+  --cyan-600: #1098ab;
+
+  /* ---------- Brand: royal indigo ---------- */
+  --indigo-300: #8da0fb;
+  --indigo-400: #5c7cfa;
+  --indigo-500: #4263eb;
+  --indigo-600: #364fc7;
+  --indigo-700: #2d348e;
+  --indigo-800: #232a70;
+  --indigo-900: #1b2159;
+
+  /* ---------- Brand: warm gold ---------- */
+  --gold-200: #fff3bf;
+  --gold-300: #ffe066;
+  --gold-400: #fcce33;
+  --gold-500: #f8a200;
+  --gold-600: #e08c00;
+  --gold-700: #b87300;
+
+  /* ---------- Neutrals ---------- */
+  --navy-900: #111827;
+  --navy-800: #182034;
+  --navy-700: #22314a;
+  --navy-600: #33445f;
+  --slate-600: #4a5a73;
+  --slate-500: #5b6b85;
+  --slate-400: #8794a8;
+  --slate-300: #b9c3d2;
+  --slate-200: #d9e1ec;
+  --slate-100: #e9eff6;
+  --slate-50: #f4f7fb;
+  --white: #ffffff;
+
+  /* ---------- Semantic ---------- */
+  --success: #12b886;
+  --success-strong: #0ca678;
+  --success-bg: #e6f8f1;
+  --warning: #f59f00;
+  --warning-bg: #fff6e0;
+  --danger: #e03131;
+  --danger-strong: #c92a2a;
+  --danger-bg: #fdecec;
+  --info: #1c7ed6;
+  --info-bg: #eaf4fe;
+
+  /* ---------- Role tokens ---------- */
+  --bg-app: #f4f7fb;
+  --bg-surface: #ffffff;
+  --bg-subtle: #f8fafd;
+  --bg-inverse: #182034;
+  --text-strong: #141c2e;
+  --text: #22314a;
+  --text-muted: #5b6b85;
+  --text-faint: #8794a8;
+  --text-on-brand: #ffffff;
+  --border: #e1e8f2;
+  --border-strong: #cbd6e5;
+  --brand: #1c7ed6;
+  --brand-strong: #1565af;
+  --brand-ink: #4263eb;
+  --brand-deep: #2d348e;
+  --accent: #f8a200;
+  --accent-soft: #fcce33;
+
+  /* ---------- Radius ---------- */
+  --r-xs: 6px;
+  --r-sm: 8px;
+  --r-md: 12px;
+  --r-lg: 16px;
+  --r-xl: 22px;
+  --r-2xl: 28px;
+  --r-pill: 999px;
+
+  /* ---------- Spacing ---------- */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 20px;
+  --s-6: 24px;
+  --s-7: 32px;
+  --s-8: 40px;
+  --s-9: 56px;
+  --s-10: 72px;
+  --s-11: 96px;
+
+  /* ---------- Shadow ---------- */
+  --sh-xs: 0 1px 2px rgba(17, 32, 58, 0.06);
+  --sh-sm: 0 2px 6px rgba(17, 32, 58, 0.07);
+  --sh-md: 0 10px 24px -8px rgba(17, 32, 58, 0.16);
+  --sh-lg: 0 24px 48px -16px rgba(17, 32, 58, 0.22);
+  --sh-brand: 0 14px 30px -10px rgba(28, 126, 214, 0.45);
+  --sh-gold: 0 12px 26px -10px rgba(248, 162, 0, 0.5);
+  --sh-inset: inset 0 1px 0 rgba(255, 255, 255, 0.7);
+
+  /* ---------- Typography ---------- */
+  --font: 'Vazirmatn Variable', 'Vazirmatn', 'IRANSansX', 'Segoe UI', Tahoma,
+    system-ui, sans-serif;
+  --fs-xs: 12px;
+  --fs-sm: 13px;
+  --fs-md: 14px;
+  --fs-lg: 15.5px;
+  --fs-xl: 17px;
+  --fs-2xl: 20px;
+  --fs-3xl: 24px;
+  --fs-4xl: 30px;
+  --fs-5xl: 38px;
+  --fs-6xl: 50px;
+  --fs-7xl: 64px;
+
+  /* ---------- Layout ---------- */
+  --container: 1200px;
+  --sidebar-w: 264px;
+  --topbar-h: 64px;
+
+  /* ---------- Motion ---------- */
+  --ease: cubic-bezier(0.22, 0.61, 0.36, 1);
+  --t-fast: 140ms;
+  --t-base: 240ms;
+  --t-slow: 420ms;
+}
