@@ -1,0 +1,12 @@
+{
+  "name": "2hs-website",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "start": "vite"
+  },
+  "devDependencies": {
+    "vite": "latest"
+  }
+}
