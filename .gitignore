@@ -1,0 +1,19 @@
+# --- Dependencies ---
+node_modules/
+
+# --- Build output / caches ---
+dist/
+.vite/
+.cache/
+
+# --- Logs ---
+*.log
+npm-debug.log*
+
+# --- Base44 sandbox / preview-only setup ---
+# These live in the working tree so the sandbox preview keeps running, but they
+# are not part of feature work. Remove these lines to ship them in a dedicated
+# "Base44 dev environment" pull request.
+/docker-compose.base44.yml
+/AGENTS.md
+/.base44/
