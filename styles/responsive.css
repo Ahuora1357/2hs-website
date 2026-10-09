@@ -1,0 +1,83 @@
+/* ---------------------------------------------------------------
+   Responsive overrides (tablet & mobile)
+   --------------------------------------------------------------- */
+
+/* Tablet — collapse dense grids to two columns */
+@media (max-width: 1024px) {
+  :root { --gutter: 22px; }
+
+  .feature-grid,
+  .service-grid { grid-template-columns: repeat(2, 1fr); }
+
+  .hero-inner { gap: 40px; padding-block: 60px 70px; }
+  .about-inner { gap: 40px; }
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; }
+}
+
+/* Stack hero, about and contact */
+@media (max-width: 900px) {
+  .section { padding-block: 68px; }
+  .section-head { margin-bottom: 40px; }
+
+  .hero-inner { grid-template-columns: 1fr; gap: 40px; padding-block: 48px 60px; }
+  .hero-content { max-width: none; }
+  .hero-visual { max-width: 640px; margin-inline: auto; }
+
+  .about-inner { grid-template-columns: 1fr; }
+  .about-title { text-align: start; }
+  .stat-card:nth-child(even) { margin-inline-start: 0; }
+
+  .contact-inner { grid-template-columns: 1fr; gap: 36px; }
+
+  .cta-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    padding-block: 48px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  :root { --gutter: 18px; --header-h: 68px; }
+
+  .section { padding-block: 56px; }
+  .section-head { margin-bottom: 32px; }
+
+  .feature-grid,
+  .service-grid,
+  .pricing-grid { grid-template-columns: 1fr; gap: 18px; }
+
+  .hero-title { font-size: clamp(1.9rem, 8vw, 2.4rem); }
+  .hero-actions { gap: 12px; }
+  .hero-actions .btn { flex: 1 1 100%; }
+  .hero-trust { gap: 10px 20px; }
+  .hero-visual { padding: 10px; }
+
+  .contact-form { grid-template-columns: 1fr; padding: 22px; }
+  .form-actions { flex-direction: column; align-items: stretch; }
+  .form-actions .btn { width: 100%; }
+
+  .footer-grid { grid-template-columns: 1fr; gap: 32px; padding-bottom: 40px; }
+  .newsletter-row { flex-direction: column; }
+  .newsletter-row .btn { width: 100%; }
+
+  .modal { padding: 8vh 14px 24px; }
+}
+
+@media (max-width: 380px) {
+  .brand-sub { display: none; }
+  .header-actions { gap: 8px; }
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *,
+  *::before,
+  *::after {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+  }
+}

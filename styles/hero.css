@@ -1,0 +1,107 @@
+/* ---------------------------------------------------------------
+   Hero — bright cyan/blue band
+   --------------------------------------------------------------- */
+.hero {
+  position: relative;
+  color: #fff;
+  background:
+    radial-gradient(1100px 520px at 88% 8%, rgba(255, 255, 255, .22), transparent 62%),
+    linear-gradient(118deg, #14509f 0%, #1e7fd8 42%, #49b4ee 100%);
+  overflow: hidden;
+}
+.hero::after {
+  content: "";
+  position: absolute;
+  inset-inline: 0;
+  bottom: 0;
+  height: 120px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, .07));
+  pointer-events: none;
+}
+
+.hero-inner {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1.02fr .98fr;
+  align-items: center;
+  gap: 56px;
+  padding-block: 76px 88px;
+}
+
+/* Text (right side in RTL) */
+.hero-content { max-width: 560px; }
+
+.eyebrow {
+  display: inline-block;
+  padding: 7px 16px;
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, .16);
+  border: 1px solid rgba(255, 255, 255, .32);
+  font-size: .85rem;
+  font-weight: 600;
+  margin-bottom: 22px;
+}
+
+.hero-title {
+  font-size: clamp(2.1rem, 4.6vw, 3.4rem);
+  font-weight: 800;
+  line-height: 1.35;
+  letter-spacing: -.01em;
+}
+
+.hero-lead {
+  margin-top: 20px;
+  font-size: clamp(1rem, 1.4vw, 1.12rem);
+  line-height: 1.95;
+  color: rgba(255, 255, 255, .9);
+  max-width: 34rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 34px;
+}
+
+.hero-trust {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px 26px;
+  margin-top: 34px;
+  padding-top: 26px;
+  border-top: 1px solid rgba(255, 255, 255, .2);
+}
+.hero-trust li {
+  position: relative;
+  padding-inline-start: 24px;
+  font-size: .92rem;
+  color: rgba(255, 255, 255, .92);
+}
+.hero-trust li::before {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 15px; height: 15px;
+  border-radius: 50%;
+  background:
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%2314509f' stroke-width='3.4' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M20 6L9 17l-5-5'/%3E%3C/svg%3E") center / 11px no-repeat,
+    rgba(255, 255, 255, .9);
+}
+
+/* Visual (left side in RTL) — full original image, never cropped */
+.hero-visual {
+  padding: 14px;
+  border-radius: var(--radius-lg);
+  background: rgba(255, 255, 255, .12);
+  border: 1px solid rgba(255, 255, 255, .28);
+  box-shadow: 0 30px 70px rgba(6, 30, 70, .3);
+}
+.hero-image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0; /* preserved exactly — no cropping */
+}
