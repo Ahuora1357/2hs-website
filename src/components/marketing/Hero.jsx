@@ -1,7 +1,6 @@
 import { Link } from 'react-router-dom';
-import { ArrowLeft, PlayCircle, Sparkles } from 'lucide-react';
+import { PlayCircle, Sparkles } from 'lucide-react';
 import Button from '../ui/Button.jsx';
-import HeroArt from './HeroArt.jsx';
 import { toFaDigits } from '../../lib/format.js';
 
 const STATS = [
@@ -17,6 +16,7 @@ export default function Hero() {
 
   return (
     <section className="hero">
+      <div className="hero__bg" aria-hidden="true" />
       <div className="container hero__inner">
         <div>
           <span className="hero__badge">
@@ -58,10 +58,6 @@ export default function Hero() {
           <p className="hero__tagline" style={{ marginTop: 'var(--s-6)', letterSpacing: '0.08em' }}>
             {toFaDigits('1')}۴ روز استفاده آزمایشی رایگان — بدون نیاز به کارت بانکی
           </p>
-        </div>
-
-        <div className="hero__art">
-          <HeroArt />
         </div>
       </div>
     </section>
