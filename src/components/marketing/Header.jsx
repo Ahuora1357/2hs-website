@@ -37,9 +37,11 @@ export default function Header() {
   return (
     <header className={`mk-header ${scrolled ? 'is-scrolled' : ''}`}>
       <div className="container mk-header__inner">
-        <Link to="/" aria-label="۲اچ‌اس — صفحه اصلی">
-          <Logo size={40} />
-        </Link>
+        {pathname !== '/' && (
+          <Link to="/" aria-label="۲اچ‌اس — صفحه اصلی">
+            <Logo size={40} />
+          </Link>
+        )}
 
         <nav className="mk-nav" aria-label="ناوبری اصلی">
           {NAV.map((item) => (
